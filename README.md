@@ -10,3 +10,8 @@ Our team is a group of Bitcoin lovers that want to analyze Satoshi emails recent
 * 4th - 5th: aggregate summary into a story
 
 All contributions will be posted here
+
+## Contribution guidelines
+1. Create a different branch: `git checkout -B <name>/<task>`
+2. Push to repo: `git push --set-upstream origin <name>/<task>`
+3. Create PRs to merge branch `<name>/<task>` into main
