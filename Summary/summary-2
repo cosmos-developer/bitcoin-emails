@@ -1,0 +1,235 @@
+# Summary 2
+
+### Email #53
+
+- **Linux Build Discussion**: Satoshi expresses enthusiasm for working on the Linux version of Bitcoin. There's a discussion about issues with connecting to Freenode's IRC via Tor due to Tor being banned because of abuse. Satoshi suggests a complicated workaround involving a password utility on Unix and considers whether multiple users could share one account, though he doubts it due to likely restrictions.
+- **Proxy Testing**: Martti's test of the proxy functionality is mentioned, with a focus on how, without IRC, discovering which nodes are online takes longer. Satoshi asks about the number of connections Martti was able to establish and how long it took, noting that the presence of `addr.dat` from previous connections would help reconnect to known nodes.
+
+  > **Important message**: We have a shortage of nodes that can accept incoming connections. It generally ranges from 2 to 4 lately. We need to emphasize the importance to people of setting up port forwarding on their router. Every P2P file sharing program has instructions how to do it. We should have a paragraph on the bitcoin.sourceforge.net homepage urging people to set up port forwarding to accept incoming connections, and a link to a site that describes how to do it for each router.
+
+### Email #54
+
+- **Further Linux Build Details**: Satoshi updates that he has made progress on the Linux build, fixing several issues but encountering undefined references due to system library dependencies. He mentions adjustments to the makefile and the use of wxWidgets for compatibility, along with challenges in using different libraries and file formats (such as xpm files for icons) across platforms.
+
+### Email #55
+
+- **Ongoing Linux Development**: Satoshi communicates continued work on the Linux build to avoid duplicating efforts with Martti. He mentions successfully linking and running the build and is now working through runtime issues, specifically loading bitmaps from xpm files instead of Windows resource files. Debian packages for dependencies like OpenSSL and GTK are discussed to simplify setup.
+
+### Email #56
+
+- **Proxy and Connectivity Feedback**: Martti provides feedback on using the proxy setting, achieving eight connections quickly, which raises questions about whether all connections were truly via Tor. The discussion touches on the relocation of `debug.log` to the data directory for easier access and understanding network behavior. The idea of seeding Bitcoin's network with known node addresses to facilitate connections without IRC is revisited, considering the potential for a wiki page to list static IP addresses for this purpose.
+
+### Email #57
+
+- Satoshi has merged the Linux changes into the main SVN trunk. The build compiles and runs, but there are issues with the UI, such as menus not working correctly, repaint issues, and some segmentation faults. These issues are believed to be debuggable with gdb. Satoshi hasn't tested network compatibility yet and advises keeping it off-net for now. Two files, `build-unix.txt` and `makefile.unix`, have been added to aid in the build process.
+
+### Email #58
+
+- Discusses proxy settings and TOR connections. Martti reports getting eight connections quickly, but it's unclear if all are through TOR. Satoshi moves the `debug.log` to the data directory to better track connections and mentions an SVN commit that overhauls address selection for connections. This aims to improve connection times without IRC, which was mainly used to seed the first connection. The possibility of using a wiki page for static IP addresses to aid TOR users is discussed.
+
+### Email #59
+
+- Satoshi suggests looking for a more full-featured forum hosting option as the current bitweaver forum feature is too lightweight. The importance of a vibrant forum for project visibility, user engagement, and feature discussion is highlighted. Satoshi also emphasizes the need for SSL support, especially for users interested in TOR/I2P, due to concerns about password scraping by malicious TOR exit nodes.
+
+### Email #60
+
+- Satoshi reports that the Linux build is now reliable, except for an issue with `wxMessageBox()` causing crashes when called outside the GUI thread. There's a general discussion about the thread safety of wxWidgets functions. A port binding issue on Linux that prevents immediate restarts after exiting is mentioned. Satoshi also queries the interoperability of database files between Linux and Windows builds.
+
+### Email #61
+
+- Martti discusses the balance between making Bitcoin easy to use for average users while maintaining the ability for more technically inclined individuals to achieve perfect secrecy using TOR. He suggests potential solutions for forum hosting to support SSL, considering options like ning.com for its popularity and ease of use among users with existing accounts.
+
+### Email #62 & #63
+
+- Satoshi announces the Linux build (version 0.1.6 test1) is ready for testing and provides a download link. This marks a significant step in making Bitcoin accessible on Linux platforms.
+
+### Email #64
+
+- Martti confirms the Linux build seems to work fine on his end, indicating a major milestone in the development process.
+
+### Email #65
+
+- Martti creates a test site on ning.com for Bitcoin, aiming to improve the project's online presence and potentially use it as a forum platform.
+
+### Email #66
+
+- Satoshi provides troubleshooting advice regarding the download of blocks and interaction with the network. He discusses software behavior, such as handling block requests and the importance of running the program long enough for proper network synchronization. There's also mention of improving the UI regarding minimizing to tray options.
+
+### Email #67
+
+- Satoshi expresses his preference for a traditional forum layout for technical discussions over the social networking style of ning.com. He suggests looking into platforms like phpBB or IPB that are more conducive to detailed technical discussions.
+
+### Email #68
+
+- Satoshi responds to questions about the Linux build's performance and discusses potential reasons for observed differences in block download speeds compared to the Windows version. He also addresses technical errors reported by a user and the importance of not running multiple instances of Bitcoin on the same machine.
+
+### Email #69
+
+- Satoshi provides a detailed analysis of the downloading blocks issue, suggesting improvements to make the process more efficient. He reassures that shutting down Bitcoin does not risk losing unconfirmed transactions since they are broadcast to the network immediately. He also discusses technical aspects of Bitcoin's operation, including the use of SO_REUSEADDR to allow rebinding to ports and the handling of database shutdowns.
+
+The emails from #70 to #79 between Satoshi Nakamoto, Martti Malmi, and Liberty Standard focus on the testing and development of the Linux build of Bitcoin, specifically addressing technical issues, improvements, and user feedback. Here’s a summary of their content:
+
+### Email #70
+
+- Martti reports the Linux build started quickly and downloaded blocks faster than his Windows PC. He mentions needing to pause active development for about a month due to school commitments but wants to stay in contact.
+
+### Email #71
+
+- Satoshi advises against using Bitcoin on Wine due to database errors and suggests any issues with the Linux build can be fixed. He notes the Linux build might have better performance due to better optimization of the SHA-256 code by GCC 4.3.3 compared to the older compiler used on Windows.
+
+### Email #72
+
+- Satoshi appreciates Martti's contributions to the Linux build, including autostart and minimize to tray features. He wishes Martti good luck with his school project.
+
+### Email #73
+
+- Satoshi identifies a problem where all Liberty Standard's connections went dead, leading to the generation of blocks that were not recognized by the network. He plans to research socket handling issues and possibly implement a mechanism to disconnect inactive connections.
+
+### Email #74
+
+- Satoshi addresses socket error handling and introduces an inactivity timeout to better manage zombie sockets. He includes improvements to the initial block download process and urges testing with the "-debug" switch for additional logging.
+
+### Email #75
+
+- Satoshi attaches the linux-0.1.6-test2 build for download.
+
+### Email #76
+
+- Discussing ongoing connection issues, Satoshi notes his node is getting zombie connections from Liberty Standard's node. He introduces specific code to detect and manage zombie sockets in the new test3 build.
+
+### Email #77
+
+- The linux-0.1.6-test3 build is attached, which includes measures to detect and handle zombie sockets more effectively.
+
+### Email #78
+
+- Satoshi adds MSG_DONTWAIT flags to send and recv calls and introduces a monitoring thread to restart the socket handler if it becomes unresponsive. He explains the implementation details and safety measures taken.
+
+### Email #79
+
+- Satoshi attaches the linux-0.1.6-test5 build, focusing on addressing the zombie sockets issue and enhancing stability.
+
+### Email #80
+
+- Satoshi Nakamoto creates a Zetaboards forum for Bitcoin, sharing admin access with Martti Malmi and comments on the forum's aesthetics and initial setup. He notes the lack of SSL support but selects the best available theme after extensive searching.
+
+### Email #81
+
+- Satoshi updates on the Linux build, mentioning that the zombie socket problem seems resolved with the latest test version. He speculates on the cause of persistent database errors and suggests they might relate to running a 32-bit version of Berkeley DB on 64-bit Linux. Satoshi asks Martti about his system's specifications to further diagnose the issue.
+
+### Email #82
+
+- Martti Malmi confirms experiencing the same database errors as described by Satoshi, noting his Ubuntu distribution is 64-bit. He mentions the program terminated a few times with errors logged concerning `Db::close` and `Bad file descriptor`.
+
+### Email #83
+
+- Satoshi decides to install a 64-bit system to investigate the database errors, assuming they might be due to the incompatibility of a 32-bit Berkeley DB on 64-bit Linux. He also inquires about how Martti would prefer to be credited in project documentation.
+
+### Email #84
+
+- Martti suggests using his real name for credits and discusses potential names for a Bitcoin exchange service, seeking Satoshi's opinion between "Bitcoin X" and "Bitcoin Shop."
+
+### Email #85
+
+- Satoshi prefers "bitcoinshop.com" over "bitcoinx.com" and warns Martti about domain name front-running by certain websites, recommending a secure site for domain name checks.
+
+### Email #86
+
+- Satoshi seeks more information about database errors, asking Liberty Standard to send his `db.log` file for analysis. He is trying to understand whether the errors are specific to certain files within Bitcoin's data directory.
+
+### Email #87
+
+- Martti reports installing a TikiWiki on his VPS with SSL enabled, suggesting it could serve as the platform for Bitcoin's website and possibly integrate the forum. He proposes redirecting bitcoin.org or the SourceForge page to this new site.
+
+### Email #88
+
+- Satoshi queries the benefits of switching to TikiWiki from the current platform, listing potential advantages like SSL support and independence from SourceForge. He expresses concern over the forum functionality of TikiWiki and prioritizes finding a robust forum solution, questioning the suitability of Zetaboards despite its drawbacks.
+
+### Email #89
+
+- Martti advocates for a unified site to avoid separate logins for the wiki and forum, highlighting the ad-free environment and integrated functionalities as major benefits. He suggests considering Drupal for its better CMS and forum capabilities, while acknowledging the drawbacks of Zetaboards, such as ads and lack of SSL.
+
+### Email #90
+
+- Satoshi discusses moving towards a CMS like Drupal for better web presentation and lists pros and cons of using zetaboards for the forum, highlighting concerns over SSL, privacy, control, and ads.
+
+### Email #91
+
+- Satoshi introduces test 7, which addresses the "Bad file descriptor" exception and might improve initial block download speeds. He mentions a restructuring of database handling and asks for data directory backups before testing.
+
+### Email #92
+
+- Satoshi suggests installing phpBB3 on Martti's VPS as a better option for the forum, considering potential future benefits, including revenue from targeted ads.
+
+### Email #93 & #94
+
+- Martti reports installing both phpBB3 and Simple Machines Forum (SMF) for comparison and shares logs for troubleshooting database exceptions Satoshi had asked for.
+
+### Email #95
+
+- Satoshi addresses a bug reported by Liberty Standard and mentions disabling wallet flush on Linux to prevent database exceptions. He also introduces an orderly initial block download process in the upcoming test8.
+
+### Email #96
+
+- Satoshi requests db.log files from Martti to further analyze the "Bad file descriptor" database exceptions and discusses a potential pattern in the errors.
+
+### Email #97
+
+- Satoshi expresses interest in using SMF or phpBB3 for the forum after Martti installs both for comparison. Satoshi plans to research community feedback on the two options.
+
+### Email #98
+
+- Martti confirms running a test version that might have led to database errors and mentions his computer setup, which could impact the occurrence of "zombie sockets."
+
+### Email #99
+
+- Satoshi discusses configuring the SMF forum to mimic the appearance of more popular forum software like vBulletin. He mentions the need to install an SMF File Manager mod for further customization and asks Martti for permissions to proceed. Satoshi also reports the Linux version appears stabilized and mentions Liberty Standard's first sale of bitcoins.
+
+### Email #100
+
+- Martti provides Satoshi with temporary SSH/SFTP access credentials for configuring the SMF forum and agrees to the forum going live. Martti suggests setting up a DNS entry for forum.bitcoin.org and discusses his plans for setting up a Bitcoin exchange.
+
+### Email #101
+
+- Martti mentions the server's sendmail is not configured, affecting PHP mail functionality, which isn't needed yet.
+
+### Email #102
+
+- Satoshi prefers a DNS entry for integrating the forum with bitcoin.org and discusses merging the current site with Martti's content. He emphasizes the Linux build's stability and mentions NewLibertyStandard's first Bitcoin sale, suggesting a market price for Bitcoin transactions.
+
+### Email #103
+
+- Satoshi successfully installs the SMF File Manager mod using SSH and explores Drupal and Joomla as CMS options, noting Drupal's integration with SMF and Joomla's ease of use.
+
+### Email #104
+
+- Martti prefers Drupal over Joomla for its admin interface and mentions issues with images not loading properly over HTTPS. He proposes changing bitcoin.org's DNS entry instead of using a separate domain for the forum.
+
+### Email #105
+
+- Satoshi decides to set up Drupal for the site, discusses the pros and cons of default HTTPS for websites, and suggests making SSL available for those who need it. He plans to add notes about SSL on the registration and TOR pages, considering obtaining an SSL certificate later.
+
+### Key technological discussions
+
+1. **Linux Build Stability and Enhancements (Emails #53, #54, #55, #56, #71, #72, #73, #74, #75, #76, #77, #78, #79, #102)**
+
+   - The development, testing, and stabilization of the Linux build of Bitcoin are crucial for expanding Bitcoin's user base to those on Linux platforms. Enhancements like proxy support, handling of "zombie sockets," and improvements in block downloading directly impact Bitcoin's reliability and performance.
+
+2. **Database Handling and Exceptions (Emails #91, #95, #96, #98, #102)**
+
+   - Addressing database exceptions such as "Bad file descriptor" errors is critical for the integrity and reliability of Bitcoin's data storage mechanism. The transition to keeping database handles open to avoid errors affects the stability of Bitcoin's operation on different operating systems.
+
+3. **Socket Handling and Network Connectivity (Emails #73, #74, #76, #77, #78, #96)**
+
+   - Improvements in socket handling, including the management of inactive connections and the introduction of code to detect zombie sockets, are vital for maintaining robust network connectivity. This ensures that Bitcoin nodes can reliably communicate with each other, which is essential for transaction verification and block propagation.
+
+4. **Initial Block Download Process (Email #95)**
+
+   - Implementing an orderly initial block download process to request blocks in batches rather than all at once directly impacts the efficiency of node synchronization with the blockchain. This improvement helps new nodes to quickly and reliably catch up with the current blockchain state.
+
+5. **Forum and Website Infrastructure (Emails #80, #82, #83, #84, #85, #87, #88, #89, #90, #92, #93, #94, #97, #99, #100, #101, #102, #103, #104, #105)**
+
+   - While not directly part of Bitcoin's core architecture, the decision to set up a forum using SMF and considerations for the CMS (Drupal vs. Joomla) for Bitcoin's website are important for community support, development collaboration, and user engagement. These platforms serve as crucial channels for communication, support, and dissemination of information related to Bitcoin development and use.
+
+6. **SSL and Security Considerations for Website and Forum (Emails #87, #88, #89, #104, #105)**
+   - Discussions about implementing SSL for the website and forum touch on the broader theme of security for Bitcoin users. While more related to the user experience on Bitcoin's support platforms, ensuring secure communication channels reflects on Bitcoin's overall commitment to security, especially considering the importance of privacy for Bitcoin users.
