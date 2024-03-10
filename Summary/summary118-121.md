@@ -32,8 +32,7 @@ I'm making some changes. The largest free transaction will be 60KB, or
 about 27,000bc if made of 50bc inputs. I hope that's high enough that
 the transaction fee should rarely ever come up. v0.2 nodes will take
 free transactions until the block size is over 200K, with priority
-given  
-to smaller transactions.  
+given to smaller transactions.  
 It's best if you don't talk about this transaction fee stuff in
 public.  
 It's there for flood control. We don't want to give anyone any ideas.  
