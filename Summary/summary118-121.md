@@ -1,43 +1,39 @@
-\# Summary 118 -\> 121  
+# Summary 118 -\> 121  
   
--Context:  
+### Context:  
   
-Email \#118:  
+* Email \#118:  
 I just made a 10,000bc transaction from one account to another, but it  
 ended up sending 10,000.20bc. Any idea why that could be?  
   
-Email \#119:  
+* Email \#119:  
 There's a transaction fee of 0.01 per KB after the first 1KB for
 oversized transactions. The first 1KB is free, small transactions are
 typically 250 bytes. Doubleclick on the transaction. Think of it like
 postage by weight.  
-  
 The solution is an extra dialog when sending, something like "This is an
 oversized transaction and requires a transaction fee of 0.20bc. Is this
 OK?" (is that text good enough or any improvements?) I have the code
 already, I'll put it in.  
-  
 Then we wouldn't have to explain the 10,000.20bc transaction, but may
 still have to explain who the transaction fee goes to.  
   
-Email \#120:  
+* Email \#120:  
 Is there no transaction fee then, if you send the same amount in
 multiple small packages?  
 Sounds fine.  
 Where should it go btw? Here it went to the receiver along with all the
 other coins. Transaction screenshot attached.  
   
-Email \#121:  
+* Email \#121:  
 True. I suppose the dialog could make it worse by giving people a chance
 to experiment with breaking it up.  
-  
 I'm making some changes. The largest free transaction will be 60KB, or
 about 27,000bc if made of 50bc inputs. I hope that's high enough that
 the transaction fee should rarely ever come up. v0.2 nodes will take
 free transactions until the block size is over 200K, with priority
 given  
 to smaller transactions.  
-  
 It's best if you don't talk about this transaction fee stuff in
 public.  
 It's there for flood control. We don't want to give anyone any ideas.  
@@ -47,8 +43,9 @@ transaction on the sender's side, it'll be a debit 10000.42 with
 transaction fee 0.22. The bug was that it had to make a rare third pass
 on calculating the fee, and incorrectly added the first pass' fee to the
 amount being sent. Will fix.  
-  
--Summary for each emails in range (118 - 121):  
+***  
+### Summary:  
+
 Malmi sent 10,000bc to another account but it actually sent
 10,000.20bc?? and Malmi wondered why?  
 Satoshi explains that 0.20bc is the transaction gas fee but still has to
@@ -66,8 +63,6 @@ priority to smaller transactions.
 Satoshi replied: It's best not to talk publicly about this transaction
 fee issue.  
 It is there for flood control. We don't want to give anyone any ideas.  
-  
--Conclusion:  
-Tóm lại, email này tập trung giải quyết một số vấn đề kỹ thuật như chi
-phí giao dịch và hướng dẫn khắc phục các lỗi liên quan đến phí giao
-dịch.
+***    
+### Conclusion:  
+In summary, this email focuses on resolving some technical issues such as transaction costs and directions to fix errors related to transaction fees.
