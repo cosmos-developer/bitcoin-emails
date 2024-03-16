@@ -63,7 +63,7 @@ input.
 priority to smaller transactions.  
 Satoshi replied: It's best not to talk publicly about this transaction
 fee issue.  
-It is there for flood control. We don't want to give anyone any ideas.  
+It is there for flood control. We don't want to give anyone any ideas.(Flood control ensures that systems and services are not overloaded or attacked).  
 ***    
 ### Conclusion:  
 In summary, this email focuses on resolving some technical issues such as transaction costs and directions to fix errors related to transaction fees.
