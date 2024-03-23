@@ -48,10 +48,10 @@ automatically starts connecting.
   
 ***  
 ### Summary:    
-(Email #52 and #53):Connect to Freenode IRC via TOR
-(Email #53 and #56): Connect to Bitcoin nodes
-(Email #57): Update the Linux version of Bitcoin
-(Email #58): Improved connection to TOR and Bitcoin   
+(Email #52 and #53):Connect to Freenode IRC via TOR.  
+(Email #53 and #56): Connect to Bitcoin nodes.  
+(Email #57): Update the Linux version of Bitcoin.  
+(Email #58): Improved connection to TOR and Bitcoin.     
 
 [Date: Tue, 03 Nov 2009 09:31:41 +0200] [Email #52]:  
 Mmalmi said couldn't get connected using the Tor SOCKS proxy. 
