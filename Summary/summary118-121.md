@@ -44,17 +44,20 @@ on calculating the fee, and incorrectly added the first pass' fee to the
 amount being sent. Will fix.  
 ***  
 ### Summary:  
-[Wed, 02 Dec 2009 16:26:42 +0200] [Email #118]:  
+* [Wed, 02 Dec 2009 16:26:42 +0200] [Email #118]:  
 Malmi sent 10,000bc to another account but it actually sent
 10,000.20bc?? and Malmi wondered why?  
-[Wed, 02 Dec 2009 17:47:48 +0000] [Email #119]:  
+
+* [Wed, 02 Dec 2009 17:47:48 +0000] [Email #119]:  
 Satoshi explains that 0.20bc is the transaction gas fee but still has to
 explain who will this gas fee go to?  
-[Thu, 03 Dec 2009 09:46:50 +0200] [Email #120]:  
+
+* [Thu, 03 Dec 2009 09:46:50 +0200] [Email #120]:  
 Malmi wondered where it should go? Here it went to the recipient along
 with all the other coins. And Malmi wondered how to send the same amount
 of money but divided into many small packages, would there be a fee?  
-[Fri, 04 Dec 2009 04:24:41 +0000] [Email #121]:  
+
+* [Fri, 04 Dec 2009 04:24:41 +0000] [Email #121]:  
 Satoshi's response to the issue of split transactions: Satoshi is making
 some changes  
 =\> The largest free transaction is 60KB or 27,000bc if done from 50bc
