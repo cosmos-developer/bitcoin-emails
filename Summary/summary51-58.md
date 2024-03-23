@@ -69,11 +69,11 @@ Satoshi merged the linux changes into the main trunk on SVN.
 It compiles and runs now.  Satoshi think all the problems are in the UI.
 The menus quickly quit working and it doesn't repaint when it's supposed to unless Satoshi resize it, and the UI is getting some segfaults.  Shouldn't be too hard to debug with gdb. Satoshi haven't tested if it plays nice with other nodes yet so keep it off-net.  
 [Date: Thu, 05 Nov 2009 15:25:27 +0000] [Email #58]:  
-Satoshi did it
-debug.log moved to data directory "%appdata%/bitcoin/debug.log"
-IRC is optimized to make the first connection
-The connection method is to prioritize connections recently viewed online
-Satoshi asked Mmalmi if he thinks that anonymous people are looking for ways to be completely anonymous, such as never connecting once without TOR so no one knows they use bitcoin or just want to switch to TOR before doing so Show any transactions? Only if you want to be completely invisible then you have to do manual seeding -proxy -addnode. It should be easy to figure that out; If you run bitcoin normally to start then it will automatically start connecting immediately.
+Satoshi do  
+-debug.log moved to data directory "%appdata%/bitcoin/debug.log"  
+-IRC is optimized to make the first connection  
+-The connection method is to prioritize connections recently viewed online  
+-Satoshi asked Mmalmi if he thinks that anonymous people are looking for ways to be completely anonymous, such as never connecting once without TOR so no one knows they use bitcoin or just want to switch to TOR before doing so Show any transactions? Only if you want to be completely invisible then you have to do manual seeding -proxy -addnode. It should be easy to figure that out; If you run bitcoin normally to start then it will automatically start connecting immediately.
 ***    
 ### Conclusion:  
 In summary, these emails revolve around dealing with issues related to connecting to the Freenode IRC server via TOR and initiating connections to Bitcoin nodes.
