@@ -74,7 +74,7 @@ Satoshi merged the linux changes into the main trunk on SVN.
 It compiles and runs now.  Satoshi think all the problems are in the UI.
 The menus quickly quit working and it doesn't repaint when it's supposed to unless Satoshi resize it, and the UI is getting some segfaults.  Shouldn't be too hard to debug with gdb. Satoshi haven't tested if it plays nice with other nodes yet so keep it off-net.  
 [Date: Thu, 05 Nov 2009 15:25:27 +0000] [Email #58]:  
-Satoshi do  
+Satoshi did:  
 -debug.log moved to data directory "%appdata%/bitcoin/debug.log"  
 -IRC is optimized to make the first connection  
 -The connection method is to prioritize connections recently viewed online  
