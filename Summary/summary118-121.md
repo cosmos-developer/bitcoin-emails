@@ -1,5 +1,8 @@
 # Summary 118 -\> 121  
-  
+
+### Summary:  
+This emails block focuses on resolving some technical issues such as transaction costs and directions to fix errors related to transaction fees.
+***
 ### Context:  
   
 * Email \#118:  
@@ -43,7 +46,7 @@ transaction fee 0.22. The bug was that it had to make a rare third pass
 on calculating the fee, and incorrectly added the first pass' fee to the
 amount being sent. Will fix.  
 ***  
-### Summary:  
+### Section summary:  
 * [Wed, 02 Dec 2009 16:26:42 +0200] [Email #118]:  
 Malmi sent 10,000bc to another account but it actually sent
 10,000.20bc?? and Malmi wondered why?  
@@ -67,6 +70,3 @@ priority to smaller transactions.
 Satoshi replied: It's best not to talk publicly about this transaction
 fee issue.  
 It is there for flood control. We don't want to give anyone any ideas.(Flood control ensures that systems and services are not overloaded or attacked).  
-***    
-### Conclusion:  
-In summary, this email focuses on resolving some technical issues such as transaction costs and directions to fix errors related to transaction fees.
