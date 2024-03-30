@@ -12,7 +12,7 @@ ended up sending 10,000.20bc. Any idea why that could be?
 * Email \#119:  
 There's a transaction fee of 0.01 per KB after the first 1KB for
 oversized transactions. The first 1KB is free, small transactions are
-typically 250 bytes. Doubleclick on the transaction. Think of it like
+typically 250 bytes. Double click on the transaction. Think of it like
 postage by weight.  
 The solution is an extra dialog when sending, something like "This is an
 oversized transaction and requires a transaction fee of 0.20bc. Is this
