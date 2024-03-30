@@ -25,13 +25,6 @@ When the Linux build works, it's easier to set up nodes on servers
 that are online most of the time and have a static IP. A static ip  
 list shipped with Bitcoin and a peer exchange protocol would be cool.  
 That way there'd be no need for an IRC server.
-* Email \#57:  
-I merged the linux changes into the main trunk on SVN.  It compiles and 
-runs now.  I think all the problems are in the UI.  The menus quickly 
-quit working and it doesn't repaint when it's supposed to unless I 
-resize it, and the UI is getting some segfaults.  Shouldn't be too hard 
-to debug with gdb.  I haven't tested if it plays nice with other nodes 
-yet so keep it off-net.
 * Email \#58:   
 That would be great.  It's only TOR users that need it, so in the 
 instructions saying "bitcoin -proxy=127.0.0.1:9050 -addnode=<someip>", 
@@ -48,10 +41,7 @@ automatically starts connecting.
   
 ***  
 ### Summary:    
-(Email #52, #53, #56, #58): Connect via TOR.   
-(Email #54, #55, #57): Update the Linux version of Bitcoin.   
-
-1:(Email #52, #53, #56, #58): Connect via TOR:   
+(Email #52, #53, #56, #58): Connect via TOR.    
 [Date: Tue, 03 Nov 2009 09:31:41 +0200] [Email #52]:  
 Mmalmi said couldn't get connected using the Tor SOCKS proxy. 
 That might be because of the Freenode Tor policy which requires connecting to their hidden service: http://freenode.net/irc_servers.shtml#tor   
@@ -72,12 +62,7 @@ Satoshi answers the question "why is there no debug.log in the directory I'm run
 For the topic:    
 "If some nodes that accept incoming connections were willing to have theirIP coded into the program, it could seed automatically. Or some IP seed addresses posted on a Wiki page with the instructions. The wiki page sounds like a good and quickly applicable solution. I could keep my ip updated there and we could ask others to do thesame. When the Linux build works, it's easier to set up nodes on servers that are online most of the time and have a static IP. A static ip list shipped with Bitcoin and a peer exchange protocol would be cool. That way there'd be no need for an IRC server."    
 => Satoshi thinks that would be great. It's only TOR users that need it, so in the instructions saying "bitcoin -proxy=127.0.0.1:9050 -addnode=<someip>", someip could be an actual static IP, with the wiki free-for-all add-your -ip list nearby or a link to it. There should be a link to that optional step, add your IP to this list now that you can accept incoming if you're static.    
--Satoshi asked Mmalmi if he thinks that anonymous people are finding ways to be completely anonymous, such as never connecting once without TOR so no one knows if they use bitcoin or just want to transfer to TOR before making any transactions? Only if you want to completely hide then you have to do manual seeding -proxy -addnode. It's easy to figure that out; If you run bitcoin normally to start then it will automatically start connecting immediately.   
- 
-[Date: Thu, 05 Nov 2009 05:31:03 +0000] [Email #57]:  
-Satoshi merged the linux changes into the main trunk on SVN.
-It compiles and runs now.  Satoshi think all the problems are in the UI.
-The menus quickly quit working and it doesn't repaint when it's supposed to unless Satoshi resize it, and the UI is getting some segfaults.  Shouldn't be too hard to debug with gdb. Satoshi haven't tested if it plays nice with other nodes yet so keep it off-net.  
+-Satoshi asked Mmalmi if he thinks that anonymous people are finding ways to be completely anonymous, such as never connecting once without TOR so no one knows if they use bitcoin or just want to transfer to TOR before making any transactions? Only if you want to completely hide then you have to do manual seeding -proxy -addnode. It's easy to figure that out; If you run bitcoin normally to start then it will automatically start connecting immediately.    
 ***    
 ### Conclusion:  
 In summary, these emails revolve around dealing with issues related to connecting to the Freenode IRC server via TOR and initiating connections to Bitcoin nodes.
