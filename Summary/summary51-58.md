@@ -48,11 +48,10 @@ automatically starts connecting.
   
 ***  
 ### Summary:    
-Summary:
-(Email #52, #53, #56, #58): Connect via TOR.
-(Email #54, #55, #57): Update the Linux version of Bitcoin.
+(Email #52, #53, #56, #58): Connect via TOR.   
+(Email #54, #55, #57): Update the Linux version of Bitcoin.   
 
-1:(Email #52, #53, #56, #58): Connect via TOR: 
+1:(Email #52, #53, #56, #58): Connect via TOR:   
 [Date: Tue, 03 Nov 2009 09:31:41 +0200] [Email #52]:  
 Mmalmi said couldn't get connected using the Tor SOCKS proxy. 
 That might be because of the Freenode Tor policy which requires connecting to their hidden service: http://freenode.net/irc_servers.shtml#tor   
@@ -62,12 +61,12 @@ The idea of sharing one account among multiple users was considered but it was u
 Check proxy for Bitcoin node connection: Check proxy connection for Bitcoin nodes has difficulty finding online nodes without IRC. It takes time to establish a connection without knowing the node address. The success of the outgoing TOR connection must be confirmed by checking the debug log for "connected" entries.
 Find an alternative IRC server: suggestion request information on forum or mailing list TOR users cannot accept incoming connections: suggestion emphasizes the importance of setting up port forwarding on the router gland.  
 [Date: Wed, 04 Nov 2009 23:42:44 +0200] [Email #56]:    
-Enabling the proxy setting and restarting
-8 connections
-2 connections to localhost:9050
-7 connections from local port 8333 to elsewhere?
-no debug.log?
-suggest setting up a list of static IP to connect directly without an IRC server  
+"Besides the IRC part, how did your test of proxy go?"
+> answer to Satoshi's question above:"
+Enable proxy settings and restart 8 connections 2 connections to localhost:9050 7 connections from local port 8333 to elsewhere.
+I wonder if they're all really through TOR.
+And Mmalmi asks "why is there no debug.log in the directory I'm running in?"  
+It is recommended to set up a static IP list to connect directly without needing an IRC server.
 [Date: Thu, 05 Nov 2009 05:31:03 +0000] [Email #57]:  
 Satoshi merged the linux changes into the main trunk on SVN.
 It compiles and runs now.  Satoshi think all the problems are in the UI.
