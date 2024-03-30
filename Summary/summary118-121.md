@@ -1,7 +1,7 @@
 # Summary 118 -\> 121  
 
 ### Summary:  
-This emails block focuses on resolving some technical issues such as transaction costs and directions to fix errors related to transaction fees.
+This emails block focuses on resolving transaction costs issues and directions to fix transaction fees errors.
 ***
 ### Context:  
   
