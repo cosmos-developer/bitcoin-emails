@@ -48,20 +48,19 @@ automatically starts connecting.
   
 ***  
 ### Summary:    
-(Email #52 and #53):Connect to Freenode IRC via TOR.  
-(Email #53 and #56): Connect to Bitcoin nodes.  
-(Email #57): Update the Linux version of Bitcoin.  
-(Email #58): Improved connection to TOR and Bitcoin.     
+Summary:
+(Email #52, #53, #56, #58): Connect via TOR.
+(Email #54, #55, #57): Update the Linux version of Bitcoin.
 
+1:(Email #52, #53, #56, #58): Connect via TOR: 
 [Date: Tue, 03 Nov 2009 09:31:41 +0200] [Email #52]:  
 Mmalmi said couldn't get connected using the Tor SOCKS proxy. 
 That might be because of the Freenode Tor policy which requires connecting to their hidden service: http://freenode.net/irc_servers.shtml#tor   
 [Date: Tue, 03 Nov 2009 15:53:25 +0000] [Email #53]:    
-Satoshi responded to some issues related to connecting to Freenode's IRC server via TOR, as well as challenges encountered when establishing connections to Bitcoin nodes
-Freenode IRC connection via TOR: Freenode's hidden service bans TOR due to abuse, making connection difficult. The idea of sharing one account between multiple users has been considered but it is uncertain whether it will work due to potential limitations or administrative issues
-Check proxy for Bitcoin node connection: Check proxy connection for Bitcoin nodes has difficulty finding online nodes without IRC. It takes time to establish a connection without knowing the node address. The success of the outgoing TOR connection should be confirmed by checking the debug log for "connected" entries.  
-Find an alternative IRC server: suggest asking for information on forums or mailing lists
-TOR users cannot accept incoming connections: proposal emphasizes the importance of setting up port forwarding on the router.    
+Satoshi said if you connect to Freenode they will also ban TOR due to abuse. Satoshi wondered if it was possible to register an account and then multiple people could use it?
+The idea of sharing one account among multiple users was considered but it was uncertain whether it would work due to potential limitations or administration issues.
+Check proxy for Bitcoin node connection: Check proxy connection for Bitcoin nodes has difficulty finding online nodes without IRC. It takes time to establish a connection without knowing the node address. The success of the outgoing TOR connection must be confirmed by checking the debug log for "connected" entries.
+Find an alternative IRC server: suggestion request information on forum or mailing list TOR users cannot accept incoming connections: suggestion emphasizes the importance of setting up port forwarding on the router gland.  
 [Date: Wed, 04 Nov 2009 23:42:44 +0200] [Email #56]:    
 Enabling the proxy setting and restarting
 8 connections
