@@ -69,3 +69,7 @@ For the topic:
 => Satoshi thinks that would be great. It's only TOR users that need it, so in the instructions saying "bitcoin -proxy=127.0.0.1:9050 -addnode=<someip>", someip could be an actual static IP, with the wiki free-for-all add-your -ip list nearby or a link to it. There should be a link to that optional step, add your IP to this list now that you can accept incoming if you're static.    
 Satoshi asked Mmalmi if he thinks that anonymous people are finding ways to be completely anonymous, such as never connecting once without TOR so no one knows if they use bitcoin or just want to transfer to TOR before making any transactions? Only if you want to completely hide then you have to do manual seeding -proxy -addnode. It's easy to figure that out; If you run bitcoin normally to start then it will automatically start connecting immediately.    
 
+***  
+### Glossary:
+- IRC: Internet Relay Chat (IRC) is a text-based chat system for instant messaging. IRC is designed for group communication in discussion forums, called channels, but also allows one-on-one communication via private messages as well as chat and data transfer, including file sharing.
+- TOR: Tor, short for The Onion Router, is free and open-source software for enabling anonymous communication. It directs Internet traffic via a free, worldwide volunteer overlay network that consists of more than seven thousand relays.
