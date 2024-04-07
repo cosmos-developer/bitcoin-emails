@@ -1,11 +1,11 @@
 #Summary 66 -\> 81
 
-###Summary:
-This email block focuses on a problem Satoshi and Mmalmi encountered, which related to an user got their Bitcoin lost.
+### Summary:
+This email block focuses on a problem Satoshi and Malmi encountered, which relates to an user got their Bitcoin lost.
 
-###Context:
+### Context:
 
-*Email \#66
+* Email \#66
 Date: Sun, 08 Nov 2009 17:39:39 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Re: Linux build ready for testing
@@ -77,7 +77,7 @@ Liberty Standard wrote:
 >     should at least turn off the minimize to tray option initially by
 >     default.
 
-*Email \#68
+* Email \#68
 Date: Mon, 09 Nov 2009 01:23:59 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Re: Linux build ready for testing
@@ -131,7 +131,7 @@ processors automatically.
 
 I'm not sure what those lib errors are, I'll do some searching.
 
-Email #69
+* Email \#69
 Date: Mon, 09 Nov 2009 05:42:59 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Re: Linux build ready for testing
@@ -267,7 +267,7 @@ Liberty Standard wrote:
 > 
 >     I'm not sure what those lib errors are, I'll do some searching.
 
-*Email \#70
+* Email \#70
 Date: Mon, 09 Nov 2009 10:32:08 +0200
 From: mmalmi@cc.hut.fi
 To: Satoshi Nakamoto <satoshin@gmx.com>
@@ -332,7 +332,7 @@ developing until December. Let's keep contact anyway.
 >
 > I'm not sure what those lib errors are, I'll do some searching.
 
-*Email \#71
+* Email \#71
 Date: Mon, 09 Nov 2009 19:30:53 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Re: Linux build ready for testing
@@ -386,7 +386,7 @@ Liberty Standard wrote:
 >         #/confirmed number is just monitoring the outcome.  There's
 >         nothing your node does during that time to promote the acceptance.
 
-*Email \#73
+* Email \#73
 Date: Tue, 10 Nov 2009 16:46:04 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Re: Linux - dead sockets problem
@@ -474,7 +474,7 @@ Liberty Standard wrote:
 >                    nothing your node does during that time to promote
 >             the acceptance.
 
-*Email \#74
+* Email \#74
 Date: Wed, 11 Nov 2009 00:39:19 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Re: Linux - linux-0.1.6-test2
@@ -582,7 +582,7 @@ Satoshi Nakamoto wrote:
 >>                    nothing your node does during that time to promote
 >>             the acceptance.
 
-*Email \#76
+* Email \#76
 Date: Thu, 12 Nov 2009 05:36:06 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Linux - linux-0.1.6-test3
@@ -675,7 +675,7 @@ Liberty Standard wrote:
 >             upload was
 >                    quite high, at the limit I had set for it.
 
-Email #78
+* Email \#78
 Date: Thu, 12 Nov 2009 23:39:44 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: linux-0.1.6-test5 fix for zombie sockets
@@ -707,7 +707,7 @@ call (yuck)
 
 File attached in the next e-mail
 
-Email #81
+* Email \#81
 Date: Sun, 15 Nov 2009 15:40:29 +0000
 From: Satoshi Nakamoto <satoshin@gmx.com>
 Subject: Linux update
@@ -747,45 +747,9 @@ The DB exception is uncaught, so it'll stop the program if you get it.
 BTW, zetaboards insists on displaying "Member #", so you better sign up 
 soon and grab a good account number.
 
-Email #82
-Date: Sun, 15 Nov 2009 19:55:35 +0200
-From: mmalmi@cc.hut.fi
-To: Satoshi Nakamoto <satoshin@gmx.com>
-Subject: Re: Linux update
-The program terminated a few times with the same error in debug.log  
-close: Bad file descriptor
-blkindex.dat: Bad file descriptor
-
-I'm running a 64-bit Ubuntu distribution.
-
-> The only problem now is the DB exceptions he's getting.
-> ************************
-> EXCEPTION: 11DbException
-> Db::open: Bad file descriptor
-> bitcoin in ThreadMessageHandler()
-> ************************
-> EXCEPTION: 11DbException
-> Db::close: Bad file descriptor
-> bitcoin in ThreadMessageHandler()
->
-> I had expected those to be a Wine problem, but he's getting them on
-> Linux just the same.  He tried moving the datadir to a different drive,
-> no help.  I've never gotten them.  I'm running a stress test that
-> continuously generates a lot of activity and DB access and never got it.
->
-> He has Ubuntu 64-bit and I have 32-bit, so I'm assuming that's the
-> difference.  Is your Linux machine 64-bit or 32-bit?  Have you ever had
-> a DB exception? (see db.log also)  Now that the zombie problem is fixed
-> in test5, could you start running it on your Linux machine?  We could
-> use a 3rd vote to get a better idea of what we're dealing with here.
-> The DB exception is uncaught, so it'll stop the program if you get it.
->
-> BTW, zetaboards insists on displaying "Member #", so you better sign up
-> soon and grab a good account number.
-
 ### Section summary
 
-*[Sun, 08 Nov 2009 17:39:39 +0000] [Email #66]:
+* [Sun, 08 Nov 2009 17:39:39 +0000] [Email #66]:
 LibertyStandard wrote to complain why his blocks count didn't get updated 
 as intended? he wondered if this was a UI bug or is this a new feature?
 he thought is this is could be an error where the blocks didn't get
@@ -798,7 +762,7 @@ the debug.log file.
 Liberty also mentioned a UI feature needed to be alternated and Satoshi
 said he didn't manage to make it possible at the moment.
 
-*[Mon, 09 Nov 2009 01:23:59 +0000] [Email #68]
+* [Mon, 09 Nov 2009 01:23:59 +0000] [Email #68]
 
 Liberty started to see the blocks got downloaded at a rate of 15 
 blocks/sec and it seemed to be slower than the Windows version? and he 
@@ -820,7 +784,7 @@ bitcoin run on the same machine at once they would modify the database
 at the same time. He thought Liberty was trying to double the performance
 of bitcoin mining by running two instances.
 
-[Mon, 09 Nov 2009 05:42:59 +0000] [Email #69]
+* [Mon, 09 Nov 2009 05:42:59 +0000] [Email #69]
 Everything was so slow, Libery said he may leave Linux build to switch back 
 to Wine version in  what scenario? if he couldn't mine any bitcoins? he 
 needed to transfer bitcoins between his two bitcoin instances so he used
@@ -838,13 +802,13 @@ it's done. To transfer bitcoins, Liberty should just transfer to the exact
 address, the receiving copy doesn't have to be online at the time. Satoshi
 said turning the program off is risk-free.
 
-[Mon, 09 Nov 2009 10:32:08 +0200] [Email #70]
+* [Mon, 09 Nov 2009 10:32:08 +0200] [Email #70]
 Malmi said his download rate was normal.
 
-[Mon, 09 Nov 2009 19:30:53 +0000] [Email #71]
+* [Mon, 09 Nov 2009 19:30:53 +0000] [Email #71]
 Satoshi said database erros is the only way to lose blocks.
 
-[Tue, 10 Nov 2009 16:46:04 +0000] [#Email 73]
+* [Tue, 10 Nov 2009 16:46:04 +0000] [#Email 73]
 Liberty reported that he lost 6 out of 10 sets of maturing coins but how? 
 maybe it was caused by shutting down the program mid-confirmation? he 
 considered to switching back to Wine even though he once said he would stick 
@@ -855,11 +819,11 @@ Satoshi said the lost blocks had never been broadcasted to the network because
 Liberty's sockets went dead somehow, Liberty is still on the internet because
 IRC was still working. A block is made doesn't mean it will be broadcasted.
 
-[Wed, 11 Nov 2009 00:39:19 +0000] [#Email 74]
+* [Wed, 11 Nov 2009 00:39:19 +0000] [#Email 74]
 Satoshi fixed a few places which may cause errors for a socket. If connetions
 go dead, it should disconnect and reconnect again.
 
-[Date: Thu, 12 Nov 2009 05:36:06 +0000] [#Email 76]
+* [Date: Thu, 12 Nov 2009 05:36:06 +0000] [#Email 76]
 Liberty acknowledged the problems, but they didn't get fixed? the convos here
 got pretty vague because there messages we can't approch from the POV of Malmi.
 
@@ -873,7 +837,7 @@ About Satoshi test3:
 4. the blocks status is more clear, from #/unconfirmed to #/offline if they
 are not broadcasted
 
-[Thu, 12 Nov 2009 23:39:44 +0000] [#Email 78]
+* [Thu, 12 Nov 2009 23:39:44 +0000] [#Email 78]
 About Satoshi's test5:
 He added MSG_DONTWAIT to solve the sockets problem, this marks zombie sockets as
 non-blockingg sockets. Operations related to these sockets will retutrn immediately
@@ -881,3 +845,12 @@ if they cannot complete requested operation at the moment.
 
 There is messages from Lirberty in the next few days, I assume Satoshi's solution
 worked.
+
+***  
+### Glossary:
+- IRC: Internet Relay Chat (IRC) is a text-based chat system for instant messaging. IRC is designed for group communication in discussion forums, called channels, but also allows one-on-one communication via private messages as well as chat and data transfer, including file sharing.
+- Wine: 
+WineHQ is an open-source compatibility layer that allows users to run Windows applications on Unix-like operating systems such as Linux and macOS. It provides a translation layer for Windows API calls, enabling many Windows programs to function seamlessly on non-Windows systems. WineHQ facilitates the integration of Windows software into alternative environments, expanding accessibility and software compatibility across platforms.
+- MSG_DONTWAIT: The MSG_DONTWAIT flag is used in system calls, particularly in networking, to specify that the operation should not block, even if it would normally do so. It instructs the system to return immediately with whatever data is available, or with an error indicating that no data is available at the moment
+- SO_REUSEADDR: SO_REUSEADDR is a socket option used in networking that allows a socket to bind to an address even if the address is already in use by another socket. This enables multiple sockets to bind to the same port, facilitating applications such as server processes that need to quickly restart or handle multiple connections concurrently.
+- Maturing coins: refers to newly generated cryptocurrency that has not yet completed the required confirmation process to be spendable. During this period, they are typically locked and cannot be transferred until they reach maturity.
