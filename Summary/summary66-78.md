@@ -843,7 +843,7 @@ He added MSG_DONTWAIT to solve the sockets problem, this marks zombie sockets as
 non-blockingg sockets. Operations related to these sockets will retutrn immediately
 if they cannot complete requested operation at the moment.
 
-There is messages from Lirberty in the next few days, I assume Satoshi's solution
+There weren't messages from Lirberty in the next few days, I assume Satoshi's solution
 worked.
 
 ***  
