@@ -1,4 +1,4 @@
-#Summary 66 -\> 81
+# Summary 66 -\> 81
 
 ### Summary:
 This email block focuses on a problem Satoshi and Malmi encountered, which relates to an user got their Bitcoin lost.
