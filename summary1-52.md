@@ -1,4 +1,4 @@
-# Summary 3
+# Summary 1->52
 
 ### Summary:
 This email explains the vision of Satoshi about the existance of Bitcoin and its mission.
@@ -948,8 +948,247 @@ http://www.mail-archive.com/cryptography@metzdowd.com/mail2.html
 My description of how Bitcoin solves the Byzantine Generals' problem:
 http://www.bitcoin.org/byzantine.html
 
-### Section summary
+* Email \#25
+Date: Wed, 22 Jul 2009 13:10:02 +0300
+From: mmalmi@cc.hut.fi
+To: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: Re: Bitcoin
+> I know this sounds really retarded, but I still haven't been able to
+> get the sourceforge login page to load, so I haven't been able to read
+> it either.  https://sourceforge.net/account/login.php
 
+That's strange, I haven't had any problems with that. Clearly the
+banking establishment got scared and banned your account (and founded
+www.bitcoin.com in attempt to fetch the trademark), eh. You could ask
+if the SF staff at sfnet_ops@corp.sourceforge.com can help you.
+
+> I'm not going to be much help right now either, pretty busy with work,
+> and need a break from it after 18 months development.
+
+Oh, that sounds tough. Take your time.
+
+> It would help if there was something for people to use it for.  We need
+> an application to bootstrap it.  Any ideas?
+
+I've been thinking about a currency exchange service that sells and
+buys bitcoins for euros and other currencies. Direct exchangeability
+to an existing currency would give bitcoin the best possible initial
+liquidity and thus the best adoptability for new users. Everyone
+accepts payment in coins that are easily exchangeable for common
+money, but not everyone accepts payment in coins that are only
+guaranteed to buy a specific kind of a product.
+
+The instructional formula for stable pricing in euros would be something like:
+
+(The amount of euros that you're ready to trade for bc + the
+euro-value of goods that other people are selling for bc) /
+(Total number of bc in circulation - own bc assets).
+
+So if there's a total of 1M bitcoins of which you own 100K, you have
+1000 eur and no one else trades with bitcoin yet, you can safely offer the
+exchange rate of 1 eur / 900 bc, without having to devaluate
+even if everyone sold their coins to you. This could be guaranteed as
+the minimal exchange rate, but the rate could be also higher when
+demand is high.
+
+Initially, when others aren't yet offering anything for bitcoins, you
+can increase your bitcoin assets cheaply - for the minimum price that
+people bother to do the transaction for. If you had all the existing
+coins for yourself, you could set the price to whatever you want,
+because you wouldn't face the risk of having to buy even a single coin
+with that price (not counting the new money created by others). So
+it's best to get as much coins as possible before backing bitcoin with
+all your available euros.
+
+Profit can be gained, as usually in trading, by having a margin
+between the buying and selling prices. Making Bitcoin as usable as
+possible will make the business run better, as people do not only want
+to sell all their coins to you, but also want to buy them and use them
+as a medium of exchange.
+
+At its simplest this exchange service could be a website where
+traders, who can be individual persons, can post their rates, and
+random users can leave trade requests. Some kind of an average rate
+estimate could be shown on the site. Small-scale trading by
+individuals would be outside legal hassle in most countries, and
+putting all the eggs in the same basket would be avoided.
+
+Another idea, which could be additional to the previous one, would be
+an automated exchange service. The service would automatically
+calculate the exchange rate and perform the transactions. This would
+be nicer to the user: completion of the transaction request would be
+certain and instantaneous. Making this service might actually be quite
+easy if there was a command line interface to Bitcoin: just take any
+web application framework and use PayPal back-end integration to
+automatically send euros when Bitcoins are received, and vice versa.
+This kind of business would also work great on larger scale if you set
+up a company and take care of all the bureaucracy needed to practice
+currency exchange. (I actually have a registered company that I've
+used for billing of some IT work, I could use that as a base.)
+
+This exchange business thing is something that I'd be interested in
+doing, and I also have the sufficient technical skills to do it.
+Although, before this can be done, there should be a non-alpha version
+of Bitcoin (and the command line interface / API).
+
+> There are donors I can tap if we come up with something that needs
+> funding, but they want to be anonymous, which makes it hard to actually
+> do anything with it.
+
+If this gets started, donors / high-risk investors would be very
+welcome to bring capital for the currency's backup.
+
+So, what do you think about the idea? Note that this is not something
+that I'm asking you to do (unless you want to) if you're busy with
+other things. I can do it myself, if I get positive reviews about the
+plan.
+
+* Email \#28
+Date: Mon, 24 Aug 2009 23:00:35 +0100
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: Re: Bitcoin
+To: mmalmi@cc.hut.fi
+That's a good point that since you know how many coins exist and how 
+fast new ones are created, you could set a support price based on the 
+amount of legacy currency you have and be sure you'll have enough to 
+meet all demands.  I had imagined an auction, but it would be far 
+simpler and more confidence inspiring to back it at a specific exchange 
+rate.
+
+Offering currency to back bitcoins would attract freebie seekers, with 
+the benefit of attracting a lot of publicity.  At first it would mostly 
+be seen as a way to get free money for your computer's idle time.  Maybe 
+pitched like help support the future of e-commerce and get a little 
+money for your computer's spare cycles.  As people cash in and actually 
+get paid, word would spread exponentially.
+
+It might help to keep the minimum transaction size above an amount which 
+a typical user would be able to accumulate with one computer, so that 
+users have to trade with each other for someone to collect enough to 
+cash in.  Aggregators would set up shop to buy bitcoins in smaller 
+increments, which would add confidence in users ability to sell bitcoins 
+if there are more available buyers than just you.
+
+People would obviously be sceptical at first that the backing will hold 
+up against an onslaught of people trying to get the free money, but as 
+the competition raises the proof-of-work difficulty, it should become 
+clear that bitcoins stay scarce.  People will see that they can't just 
+get all the bitcoins they want.  It would establish a minimum value 
+under bitcoins enabling them to be used for other purposes if, 
+hopefully, other purposes are waiting for something to use.
+
+>> It would help if there was something for people to use it for.  We need
+>> an application to bootstrap it.  Any ideas?
+> 
+> I've been thinking about a currency exchange service that sells and
+> buys bitcoins for euros and other currencies. Direct exchangeability
+> to an existing currency would give bitcoin the best possible initial
+> liquidity and thus the best adoptability for new users. Everyone
+> accepts payment in coins that are easily exchangeable for common
+> money, but not everyone accepts payment in coins that are only
+> guaranteed to buy a specific kind of a product.
+
+That would be more powerful if there was also some narrow product market 
+to use it for.  Some virtual currencies like Tencent's Q coin have made 
+headway with virtual goods.  It would be sweet if there was some way to 
+horn in on a market like that as the official virtual currency gets 
+clamped down on with limitations.  Not saying it can't work without 
+something, but a ready specific transaction need that it fills would 
+increase the certainty of success.
+
+> At its simplest this exchange service could be a website where
+> traders, who can be individual persons, can post their rates, and
+> random users can leave trade requests. Some kind of an average rate
+> estimate could be shown on the site. Small-scale trading by
+> individuals would be outside legal hassle in most countries, and
+> putting all the eggs in the same basket would be avoided.
+
+Basically like an eBay site with user reviews to try to establish which 
+sellers can be trusted.  The escrow feature will help but not solve 
+everything.  It would be far more work to set up such a site than just 
+to set up a single exchange site of your own, and there won't be enough 
+users to make it go until later.  I'm thinking it wouldn't make sense to 
+make an eBay type site until later.
+
+> Another idea, which could be additional to the previous one, would be
+> an automated exchange service. The service would automatically
+> calculate the exchange rate and perform the transactions. This would
+> be nicer to the user: completion of the transaction request would be
+> certain and instantaneous. Making this service might actually be quite
+> easy if there was a command line interface to Bitcoin: just take any
+> web application framework and use PayPal back-end integration to
+> automatically send euros when Bitcoins are received, and vice versa.
+> This kind of business would also work great on larger scale if you set
+> up a company and take care of all the bureaucracy needed to practice
+> currency exchange. (I actually have a registered company that I've
+> used for billing of some IT work, I could use that as a base.)
+
+Even if you had automation, you'd probably want to review orders 
+manually before processing them anyway.  It wouldn't be hard to process 
+orders by hand, especially at first.  You could always set a minimum 
+order size to keep orders more infrequent.
+
+> This exchange business thing is something that I'd be interested in
+> doing, and I also have the sufficient technical skills to do it.
+> Although, before this can be done, there should be a non-alpha version
+> of Bitcoin (and the command line interface / API).
+> 
+> If this gets started, donors / high-risk investors would be very
+> welcome to bring capital for the currency's backup.
+> 
+> So, what do you think about the idea? Note that this is not something
+> that I'm asking you to do (unless you want to) if you're busy with
+> other things. I can do it myself, if I get positive reviews about the
+> plan.
+
+That's great, I could probably get a donor to send currency to you which 
+you convert to euros and pay out through methods that are convenient for 
+users.  I don't want to do an exchange business myself, but it can be 
+done independently of me.  Like you say, there is more software 
+development to be done first, and also I'd like to keep trying for a 
+while to think of a bootstrap application to use bitcoins for.  I've had 
+some ideas that could only be done before an exchange exists.
+
+BTW, I tried to buy bitcoin.com before I started but there was no 
+chance, it's owned by a professional domain speculator.  It's normal for 
+open source projects to have .org so it's not so bad.
+
+* Email \#30
+Date: Fri, 28 Aug 2009 07:10:06 +0300
+From: mmalmi@cc.hut.fi
+To: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: Re: Bitcoin
+> It might help to keep the minimum transaction size above an amount
+> which a typical user would be able to accumulate with one computer, so
+> that users have to trade with each other for someone to collect enough
+> to cash in.  Aggregators would set up shop to buy bitcoins in smaller
+> increments, which would add confidence in users ability to sell
+> bitcoins if there are more available buyers than just you.
+
+That might be a good idea.
+
+> That would be more powerful if there was also some narrow product
+> market to use it for.  Some virtual currencies like Tencent's Q coin
+> have made headway with virtual goods.  It would be sweet if there was
+> some way to horn in on a market like that as the official virtual
+> currency gets clamped down on with limitations.  Not saying it can't
+> work without something, but a ready specific transaction need that it
+> fills would increase the certainty of success.
+
+Bitcoin could be promoted to the users of virtual communities like  
+World of Warcraft and Second Life, which both have millions of users.  
+It would be great if not only peer-to-peer item traders, but also  
+providers of some existing virtual services that already have a lot of  
+customers, were to adopt the currency early on.
+
+A programming question: What do you think about using the Boost's  
+program_options to write settings like the transaction fee into a file  
+bitcoin.config? Or is it better to save them in the database as it is  
+now? Having a config file would make it easier to change the settings  
+when running the program on a remote server with a console access only.
+
+### Section summary
+[Date: Sun, 03 May 2009 23:32:26 +0100] [Email #3]
 Malmi wanted to write Bitcoin's FAQ, Satoshi provided him with some
 questions he previously answered.
 
@@ -959,7 +1198,7 @@ inflation schedule?
 Satoshi said it was an educated guess, he only distributed 21 mil coins
 just so the bitcoin keeps its value as the chain scales.
 
-All transactions in Bitcoin are always from "unknown" .
+All transactions in Bitcoin are always from "unknown".
 
 Bitcoin's blockchain can scale much more than Visa with existed hardware
 for a fraction of the cost.
@@ -1005,6 +1244,39 @@ a coin, so double spender couldn't double-spend later on.
 DigiCash once published a cryptocurrency in 1989, but the fatal weakness 
 was that they used a centralized system, when the company shutdown, so 
 did the currency.
+
+[Date: Wed, 22 Jul 2009 13:10:02 +0300] [Email #25]
+Satoshi couldn't get his SF login page load.
+
+> Malmi said it could be the banking systems establisment banned Satoshi's
+> account because they are scared. They also founded bitcoin.com to try to
+> fetch the trademark
+> Satoshi said Bitcoin needs an application to encourage people using
+> Bitcoin.
+
+> Satoshi thought Bitcoin should have an application for people to use it.
+> Malmi suggested there should be a service to buy and sell Bitcoin into
+> fiat-currencies. He said most people accept coins that are easily
+> converted into standard currencies, but not coins that are capable
+> to purchase only a certain amount of products.
+
+> Malmi said it could be a website where traders can post their rates and
+> random users can leave trade requests
+
+> Malmi proposed a formula to calculate the price of Bitcoin and methods
+> to make this service automated i.e using PayPal backend integration
+> to automatically send euros when Bitcoins are received.
+> Satoshi said this is not a priority in the near feature.
+> 
+[Date: Mon, 24 Aug 2009 23:00:35 +0100] [Email #28]
+> Satoshi said the exchanging service was a good idea, it would be
+> better if there product market to use Bitcoin. This would give
+> Bitcoin actual values.
+> He mentiond Tencent's Q coin which is a virtual coin used to
+> purchase virtual goods.
+
+> Satoshi said he tried to buy bitcoin.com but not possible, .org is
+> good enough.
 
 ***  
 ### Glossary:
